@@ -52,7 +52,7 @@ body {
     }
 
     .pic {
-        background: url('card-component/images/image-product-mobile.jpg');
+        background: url('https://om205.github.io/css-practice1/card-component/images/image-product-mobile.jpg');
         background-repeat: no-repeat;
         background-size: contain;
         height: 260px;
@@ -84,7 +84,7 @@ body {
     }
 
     .pic {
-        background: url('card-component/images/image-product-desktop.jpg');
+        background: url('https://om205.github.io/css-practice1/card-component/images/image-product-desktop.jpg');
         background-repeat: no-repeat;
         background-size: contain;
         height: 440px;
