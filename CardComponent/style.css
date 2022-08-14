@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@500;700&display=swap');
+
+body {
+    align-items: center;
+    background-color: hsl(0, 0%, 100%);
+    display: flex;
+    font-family: 'Montserrat', sans-serif;
+    justify-content: center;
+    margin: 0;
+    min-height: 100vh;
+    padding: 0;
+}
+
+
+.heading {
+    color: hsl(212, 21%, 14%);
+    font-family: 'Fraunces', serif;
+    font-size: xx-large;
+    font-weight: 700;
+}
+
+.lightText {
+    color: hsla(228, 12%, 48%, 0.744);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 1.5;
+}
+
+
+.design {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    min-width: 660px;
+}
+
+.card {
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 10px;
+    display: flex;
+    overflow: hidden;
+    position: relative;
+}
+
+
+@media screen and (max-width: 670px) {
+    .design {
+        background-color: hsl(30, 38%, 92%);
+        min-height: 100vh;
+        min-width: 100vw;
+    }
+
+    .pic {
+        background: url('/images/image-product-mobile.jpg');
+        background-repeat: no-repeat;
+        background-size: contain;
+        height: 260px;
+        width: 370px;
+    }
+
+    .card {
+        flex-direction: column;
+        height: 720px;
+        margin: 10px;
+        width: 370px;
+    }
+
+    .content {
+        padding: 30px;
+    }
+
+    .btn {
+        height: 45px;
+        width: 300px;
+    }
+}
+
+@media screen and (min-width: 670px) {
+    .design {
+        background-color: hsl(30, 38%, 92%);
+        height: 85vh;
+        width: 90%;
+    }
+
+    .pic {
+        background: url('/images/image-product-desktop.jpg');
+        background-repeat: no-repeat;
+        background-size: contain;
+        height: 440px;
+        width: 1130px; /*why is width not setting in div exactly*/
+    }
+
+    .card {
+        flex-direction: row;
+        height: 440px;
+        width: 600px;
+    }
+
+    .content {
+        padding: 0 50px 0 35px;
+    }
+
+    .btn {
+        height: 40px;
+        width: 220px;
+    }
+}
+
+.price span {
+    font-family: 'Fraunces', serif;
+}
+
+.price span.heading {
+    color: hsl(158, 36%, 37%);
+}
+
+.text>*,
+.price,
+.button {
+    margin: 20px 0;
+}
+
+.price .lightText {
+    bottom: 10px;
+    position: relative;
+    text-decoration: line-through;
+}
+
+.btn {
+    background-color: hsl(158, 36%, 37%);
+    border-radius: 10px;
+    color: hsl(225, 4%, 82%);
+    font-weight: bold;
+    margin: auto 0;
+}
+
+.btn span {
+    bottom: 2px;
+    position: relative;
+}
