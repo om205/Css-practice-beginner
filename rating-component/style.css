@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@500;700&display=swap');
+
+body{
+    align-items: center;
+    background-color: hsl(216, 12%, 8%);
+    color: hsl(217, 12%, 63%);
+    display: flex;
+    font-family: 'Overpass', sans-serif;
+    justify-content: center;
+    margin: 0;
+    min-height: 100vh;
+    padding: 0;
+}
+.card{
+    background-color: hsl(213, 19%, 14%);
+    border-radius: 30px;
+    display: grid;
+    height: 400px;
+    width: 400px;
+}
+.button-div{
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.button-div .round:hover{
+    background-color: hsl(213, 19%, 45%);
+}
+.round{
+    align-items: center;
+    background-color: hsl(216, 12%, 24%);
+    border: none;
+    border-radius: 100%;
+    color: hsl(217, 12%, 63%);
+    display: flex;
+    height: 45px;
+    justify-content: center;
+    margin: 0 14px;
+    text-align: center;
+    width: 45px;
+}
+.star{
+    margin-left: 8%;
+    margin-top: 30px;
+}
+
+#star-icon{
+    margin: 14px;
+}
+.heading{
+    color: hsl(0, 0%, 100%);
+    font-size: x-large;
+    font-weight: 700;
+    margin: 0 auto;
+    width: 85%;
+}
+.text{
+    font-size: 15px;
+    font-weight: 500;
+    margin: 0 auto;
+    width: 85%;
+}
+.submit{
+    background-color: hsl(16, 100%, 50%);
+    border-radius: 20px;
+    color: hsl(0, 0%, 100%);
+    font-size: large;
+    height: 40px;
+    margin: 10px auto 0 auto;
+    text-align: center;
+    width: 85%;
+}
+.submit:hover{
+    color: hsl(223, 13%, 89%);
+    cursor: pointer;
+}
+.submit span{
+    position: relative;
+    top: 10px;
+}
+
+.thank .text
+{
+    align-items:flex-start;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}.thank .heading{
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.pic{
+    padding-top: 30px;
+    text-align: center;
+}
+
+.message{
+    align-self: center;
+    background-color: hsl(216, 12%, 24%);
+    border-radius: 30px;
+    color: rgb(193, 106, 1);
+    font-weight:400;
+    justify-self: center;
+    padding: 5px 20px;
+}
+
+.thank{
+    display: none;
+    grid-template-rows: 160px 40px 80px 120px;
+}
