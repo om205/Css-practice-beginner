@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+
+body{
+    align-items: center;
+    background: linear-gradient(hsl(273, 75%, 66%),hsl(240, 73%, 65%));
+    display: flex;
+    font-family: 'Kumbh Sans', sans-serif;
+    font-size: 12px;
+    justify-content: center;
+    margin: 0;
+    height: fit-content;
+    min-height: 100vh;
+    padding: 0;
+}
+
+@media screen and (max-width:1000px) {/*Mobile*/
+    .card{
+        height:600px;
+        width: 370px;
+        position: relative;
+        margin-top: 180px;
+        margin-bottom: 50px;
+    }
+    .dekstop-view{
+        display: none;
+    }
+    .svg-mobile{
+        position:relative;
+        left: 40px;
+        width: 270px;
+    }
+    .faqs{
+        bottom: 180px;
+        position: relative;
+    }
+    .faqs li{
+        width: 300px;
+    }
+    .img-woman{
+        width: 270px;
+        position: relative;
+        bottom: 240px;
+        left: 40px;
+    }
+    .heading{
+        text-align: center;
+        margin: 20px 0;
+    }
+}
+
+@media screen and (min-width:1000px) {/*Dekstop*/
+    .card{
+        grid-template-columns: auto auto;
+        height: 500px;
+        width: 1000px;
+    }
+    .mobile-view{
+        display: none;
+    }
+    .svg-dekstop{
+        left: 10px;
+        object-fit: contain;
+        overflow: hidden;
+        position: absolute; 
+        top: -25px;
+        width: 700px;
+    }
+    .faqs{
+        width: 600px;
+    }
+    .img-woman{
+        position: relative;
+        right: 60px;
+        bottom: 130px;
+    }
+    .box{
+        top: 180px;
+        right: 100px;
+        position: relative;
+        z-index: 1;
+    }
+    .heading{
+        margin: 70px auto 20px 40px;
+    }
+    .faqs li{
+        width: 400px;
+    }
+}
+
+.card{
+    background-color: white;
+    border-radius: 30px;
+    display: grid;
+}
+.heading{
+    font-weight: 700;
+    font-size: 30px;
+}
+.divider{
+    background-color: hsl(240, 5%, 91%);
+    border: none;
+    height: 1px;
+}
+summary{
+    list-style: none;
+}
+.faqs{
+    z-index: 2;
+}
+.faqs summary{
+    color:  hsl(237, 12%, 33%);
+    cursor: pointer;
+    font-size: 14px;
+}
+.faqs summary:hover{
+    color: orange;
+}
+.faqs p{
+    color: hsl(240, 6%, 50%);
+}
+.faqs ul{
+    list-style: none;
+}
+.faqs details{
+    padding: 15px 0;
+}
+.faqs summary img{
+    float: right;
+}
